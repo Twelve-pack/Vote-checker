@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>JS script</title>
+</head>
+<body bgcolor="darkorange">
+
+	<div class="top">
+
+           <img src="flag.jpg" width="50">
+           <h1>INDIAN VOTE CHECKER</h1>
+
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="#" onclick="srv()">SERVICE</a>
+           <a href="#">SCHEMES</a>
+           <a href="#">CUSTOMER CARE</a>
+</div>
+
+	<div class="main">
+             
+             <h2>VOTEING AGE ANALIZER</h2>
+             <input type="number" name="number" placeholder="Enter Age" id="check">
+
+             <button onclick="btn()">ANALYZE</button>
+        <br>
+
+         
+
+     </div>
+
+    <div class="para">
+
+        <h2 id="demo">CHECK HERE YOUR RESULT</h2>
+
+        
+    </div> 
+
+    <div class="end-one">
+
+       <img src="apj1.png" width="200" class="image-right">
+
+    </div>
+
+    
+
+    <div class="end-last">
+        <img src="rocket.png" width="130" image="image-left"><
+    </div>
+
+
+       <div class="end-mdl">
+
+        <h2>A.P.J.Abdul Kalam</h2>
+        
+    </div>
+
+    <div class="end-start">
+        
+        <p>Don't believe in <b>Luck</b></p>
+        <p>Believe in <b>HardWork</b></p>
+    </div>
+
+    
+
+           
+
+    <!--------------------JS------------------------------> 
+
+    <script>
+         function btn(){
+
+         const age = document.getElementById("check").value;
+
+         if (age >= 18) {
+
+            document.getElementById("demo").innerHTML = "YOU ARE ELIGIBLE";
+            document.getElementById("demo").style.marginLeft =" 10%";
+         }
+
+         else{
+
+             document.getElementById("demo").innerHTML = "YOU ARE NOT ELIGIBLE";
+            document.getElementById("demo").style.marginLeft =" 5%";
+         }
+
+       }
+
+       function srv(){
+
+        window.alert("Our Service is closed while for a Movement")
+        
+       }
+       
+
+
+              
+            
+
+          
+    </script>
+
+
+</body>
+</html>
